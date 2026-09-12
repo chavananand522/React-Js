@@ -1,9 +1,12 @@
 // rfce
 import React from 'react'
 
-function Greet() {
+function Greet(props) {
   return (
-    <div>Hello Anand!</div>
+    <div>
+      <h1>Hello {props.name} also known as {props.nickname}</h1>
+      {props.children}
+    </div>
   )
 }
 
