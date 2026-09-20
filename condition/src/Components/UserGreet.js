@@ -8,15 +8,12 @@ class UserGreet extends Component {
             isLoggedIn: true
         }
     }
-    render() {
-        let msg
-        if (this.state.isLoggedIn) {
 
-            msg = <h1>Welcome Abc!</h1>
-        } else {
-            msg = <h1>Welcome Guest</h1>
-        }
-        return msg;
+    render() {
+        return (
+            this.state.isLoggedIn && <h1>Welcome Abc!</h1>
+
+        )
     }
 }
 
