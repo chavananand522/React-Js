@@ -12,11 +12,16 @@ code {
     monospace;
 }
   
-nav{
-  background-color: rgb(85, 85, 200);
-  padding: 50px,50px;
+.primary-nav{
+  background-color: rgb(162, 162, 227);
+  padding: 100px,100px;
 }
 
 nav a {
-  margin : 50px;
+  margin : 100px;
+}
+
+nav a.active {
+  text-decoration: none;
+  font-weight: bold;
 }
